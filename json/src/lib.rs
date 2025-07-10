@@ -905,6 +905,7 @@ pub struct Softfork {
 #[derive(Copy, Clone, PartialEq, Eq, Debug, Deserialize, Serialize)]
 #[serde(rename_all = "lowercase")]
 pub enum ScriptPubkeyType {
+    Anchor,
     Nonstandard,
     Pubkey,
     PubkeyHash,
